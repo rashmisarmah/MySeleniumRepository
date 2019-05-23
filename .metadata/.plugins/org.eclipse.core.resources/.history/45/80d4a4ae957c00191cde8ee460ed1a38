@@ -1,0 +1,12 @@
+package demo.page.project;
+
+import org.testng.annotations.Test;
+
+public class Switching_tabs {
+	
+	@Test
+	public void tabSwitching(){
+		
+	}
+
+}

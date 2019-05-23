@@ -1,0 +1,69 @@
+package demo.page.project;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class Login {
+	
+	@Test(priority=2)
+	public void LoginDemoPage(){
+		
+		String browser = "Mozilla";
+		WebDriver driver = null;
+		
+		
+		if(browser == "Mozilla"){
+			System.setProperty("webdriver.gecko.driver", "/Users/Rashmi/Documents/NewWorkSpace/Projects/DemoPage/DemoPageProject/geckodriver");
+			driver = new FirefoxDriver();
+		}else if (browser == "Chrome"){
+			System.setProperty("webdriver.chrome.driver", "/Users/Rashmi/Documents/NewWorkSpace/Projects/DemoPage/DemoPageProject/chromedriver");
+			driver = new ChromeDriver();
+		}
+		
+		//launch URL
+		driver.get("http://newtours.demoaut.com/");
+
+		driver.findElement(By.linkText("SIGN-ON")).click();
+		driver.findElement(By.name("userName")).click();
+		driver.findElement(By.name("userName")).sendKeys("mercury");
+		driver.findElement(By.name("password")).click();
+		driver.findElement(By.name("password")).sendKeys("mercury");
+		driver.findElement(By.linkText("login")).click();
+		
+		//flight booking
+		driver.findElement(By.name("fromPort")).click();
+		Select s1 = new Select(driver.findElement(By.name("fromPort")));
+		s1.selectByVisibleText("London");
+		driver.findElement(By.name("fromMonth")).click();
+		Select s2 = new Select(driver.findElement(By.name("fromMonth")));
+		s2.selectByVisibleText("July");
+		driver.findElement(By.name("fromDay")).click();
+		Select s3 = new Select(driver.findElement(By.name("fromDay")));
+		s3.selectByVisibleText("20");
+		driver.findElement(By.name("toPort")).click();
+		Select s4 = new Select(driver.findElement(By.name("toPort")));
+		s4.selectByVisibleText("Paris");
+		driver.findElement(By.name("toMonth")).click();
+		Select s5 = new Select(driver.findElement(By.name("toMonth")));
+		s5.selectByVisibleText("July");
+		driver.findElement(By.name("toDay")).click();
+		Select s6 = new Select(driver.findElement(By.name("toDay")));
+		s6.selectByVisibleText("30");
+		driver.findElement(By.name("findFlights")).click();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

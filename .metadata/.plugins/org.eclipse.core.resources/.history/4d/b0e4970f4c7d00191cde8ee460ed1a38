@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Demo Page Project" >
+	<test name="Registration Test" allow-return-values="true">
+		<classes>
+			<class name="demo.page.project.Registration" />
+		</classes>
+	</test>
+	
+	<!--  <test name="Login and FlightBooking" allow-return-values="true">
+		<classes>
+			<class name="demo.page.project.Login_FlightBooking" />
+		</classes>
+	</test>
+	
+	 <test name="Wrong Credential Login Test" allow-return-values="true">
+		<classes>
+			<class name="demo.page.project.Login_wrongCredentials" />
+		</classes>
+	</test> 
+	
+	<test name="Switching Tabs Test" allow-return-values="true">
+		<classes>
+			<class name="demo.page.project.Switching_tabs" />
+		</classes>
+	</test> -->
+	
+</suite>
+	
+	

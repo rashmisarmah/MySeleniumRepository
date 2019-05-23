@@ -1,0 +1,58 @@
+package demo.page.project;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class Login {
+	
+	@Test(priority=2)
+	public void LoginDemoPage(){
+		
+		String browser = "Mozilla";
+		WebDriver driver = null;
+		
+		
+		if(browser == "Mozilla"){
+			System.setProperty("webdriver.gecko.driver", "/Users/Rashmi/Documents/NewWorkSpace/Projects/DemoPage/DemoPageProject/geckodriver");
+			driver = new FirefoxDriver();
+		}else if (browser == "Chrome"){
+			System.setProperty("webdriver.chrome.driver", "/Users/Rashmi/Documents/NewWorkSpace/Projects/DemoPage/DemoPageProject/chromedriver");
+			driver = new ChromeDriver();
+		}
+		
+		//launch URL
+		driver.get("http://newtours.demoaut.com/");
+
+		driver.findElement(By.linkText("SIGN-ON")).click();
+		//driver.findElement(By.name("userName")).click();
+		driver.findElement(By.name("userName")).sendKeys("mercury");
+		driver.findElement(By.name("password")).sendKeys("mercury");
+		driver.findElement(By.linkText("login")).click();
+		
+		//flight booking
+		Select s1 = new Select(driver.findElement(By.name("fromPort")));
+		s1.selectByVisibleText("London");
+		driver.findElement(By.name("fromDay")).click();
+		Select s2 = new Select(driver.findElement(By.name("fromDay")));
+		s2.selectByVisibleText("21");
+		Select s3 = new Select(driver.findElement(By.name("toPort")));
+		s3.selectByVisibleText("Paris");
+		driver.findElement(By.name("toDay")).click();
+		Select s4 = new Select(driver.findElement(By.name("toDay")));
+		s4.selectByVisibleText("22");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

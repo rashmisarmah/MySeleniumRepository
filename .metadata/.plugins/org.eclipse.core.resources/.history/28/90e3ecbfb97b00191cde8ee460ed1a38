@@ -1,0 +1,22 @@
+package demo.page.project;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class DemoClass1 {
+
+	public static void main(String[] args) {
+		
+		//WebDriver fd = new FirefoxDriver();
+		//WebDriver cd = new ChromeDriver();
+		
+		WebDriver driver = null;
+		
+		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+1558473395191	Delete element
+1558518845656	Rename type 'Login'
+1558613960352	Delete element
+1558613991334	Rename type 'Registration'
+1558614128137	Rename type 'Login_FlightBooking'
+1558614794276	Rename type 'Login_wrongCredentials'
+1558618796212	Rename type 'RegistrationOnly'
+1558618834698	Rename type 'TC1_Login_wrongCredentials'
+1558618847979	Rename type 'TC1_DemoApp_Launch'
+1558618912308	Rename type 'Home_Login_FlightBooking'
+1558619013177	Rename type 'Registration_and_SignON_E2E'
+1558619031443	Rename type 'Switching_tabs'

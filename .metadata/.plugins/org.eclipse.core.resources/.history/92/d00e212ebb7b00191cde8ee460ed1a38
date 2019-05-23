@@ -1,0 +1,29 @@
+package demo.page.project;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+
+public class DemoClass1 {
+
+	public static void main(String[] args) {
+		
+		String os = System.getProperty("os.name").toLowerCase();
+		
+		WebDriver driver = null;
+		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
+		
+		if(os.contains("mac")){
+			System.setProperty("webdriver.gecko.driver"), System.getProperty("user.dir") + "/chromedriver");
+		}
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo Page Project]">
+  <test name="Wrong Credential Login Test(failed)">
+    <classes>
+      <class name="demo.page.project.TC03_SignOn_wrongCred">
+        <methods>
+          <include name="wrongCred"/>
+        </methods>
+      </class> <!-- demo.page.project.TC03_SignOn_wrongCred -->
+    </classes>
+  </test> <!-- Wrong Credential Login Test(failed) -->
+  <test name="Login and FlightBooking(failed)">
+    <classes>
+      <class name="demo.page.project.TC04_SignOn_correctCred_FlightBooking">
+        <methods>
+          <include name="LoginDemoPage"/>
+        </methods>
+      </class> <!-- demo.page.project.TC04_SignOn_correctCred_FlightBooking -->
+    </classes>
+  </test> <!-- Login and FlightBooking(failed) -->
+</suite> <!-- Failed suite [Demo Page Project] -->

@@ -1,0 +1,39 @@
+package demo.page.project;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+
+public class DemoClass1 {
+
+	public static void main(String[] args) {
+		
+		String os = "mac";
+		String browser = "Chrome";
+		WebDriver driver = null;
+		
+		System.setProperty("webdriver.gecko.driver", "/Users/Rashmi/Documents/NewWorkSpace/Projects/DemoPage/DemoPageProject/geckodriver");
+		System.setProperty("webdriver.chrome.driver", "/Users/Rashmi/Documents/NewWorkSpace/Projects/DemoPage/DemoPageProject/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "\\Users\\Rashmi\\Documents\\NewWorkSpace\\Projects\\DemoPage\\DemoPageProject\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "\\Users\\Rashmi\\Documents\\NewWorkSpace\\Projects\\DemoPage\\DemoPageProject\\geckodriver.exe");
+		
+		driver.get("http://newtours.demoaut.com/");
+		driver.quit();
+		
+		if(browser == "Mozilla" && (os == "mac" || os == "windows")){
+			driver = new FirefoxDriver();
+		}else if (browser == "Chrome" && (os == "mac" || os == "windows")){
+			driver = new ChromeDriver();
+		}
+		
+		driver.get("http://newtours.demoaut.com/");
+		driver.quit();
+		
+		
+
+	}
+
+
+}
