@@ -5,6 +5,8 @@
     <classes>
       <class name="demo.page.project.TC04_SignOn_correctCred_FlightBooking">
         <methods>
+          <include name="launchDemoPage"/>
+          <include name="afterTest_Quit"/>
           <include name="LoginDemoPage"/>
         </methods>
       </class> <!-- demo.page.project.TC04_SignOn_correctCred_FlightBooking -->

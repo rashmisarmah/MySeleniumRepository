@@ -1,42 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<suite name="Demo Page Project" >
-	<test name="Launch Test" allow-return-values="true">
+<suite name="Demo App">
+	<test name="TC01" allow-return-values="true">
 		<classes>
-			<class name="demo.page.project.TC01_DemoApp_Launch" />
+			<class name="demo.page.project.TC01_DemoApp_SwitchTabs" />
 		</classes>
 	</test>
 	
-	<test name="Registration Test" allow-return-values="true">
+	<test name="TC02" allow-return-values="true">
 		<classes>
-			<class name="demo.page.project.TC02_User_Registration" />
+			<class name=demo.page.project.TC02_User_Registration />
 		</classes>
 	</test>
 	
-	<test name="Wrong Credential Login Test" allow-return-values="true">
+	<test name="TC03" allow-return-values="true">
 		<classes>
 			<class name="demo.page.project.TC03_SignOn_wrongCred" />
 		</classes>
-	</test> 
+	</test>
 	
-	<test name="Login and FlightBooking" allow-return-values="true">
+	<!--  <test name="TC04" allow-return-values="true">
 		<classes>
 			<class name="demo.page.project.TC04_SignOn_correctCred_FlightBooking" />
 		</classes>
 	</test>
 	
-	<test name="Registration and SignOn E2E Test" allow-return-values="true">
+	<test name="TC05" allow-return-values="true">
 		<classes>
 			<class name="demo.page.project.TC05_Reg_SignOn_E2E" />
 		</classes>
-	</test>
-	
-	<test name="Switching Tabs Test" allow-return-values="true">
-		<classes>
-			<class name="demo.page.project.TC06_Tab_Switching" />
-		</classes>
-	</test>
-	
+	</test> -->
 </suite>
 	
 	
