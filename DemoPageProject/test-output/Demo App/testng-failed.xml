@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Demo App]">
-  <test name="TC01(failed)">
+  <test name="TC02(failed)">
     <classes>
-      <class name="demo.page.project.TC01_DemoApp_SwitchTabs_1">
+      <class name="demo.page.project.TC05_Reg_SignOn_E2E">
+        <methods>
+          <include name="afterTest_Quit"/>
+          <include name="launchDemoPage"/>
+        </methods>
+      </class> <!-- demo.page.project.TC05_Reg_SignOn_E2E -->
+      <class name="demo.page.project.TC01_DemoApp_SwitchTabs">
         <methods>
           <include name="launchDemoPage"/>
-          <include name="TabSwitching"/>
+          <include name="afterTest_Quit"/>
         </methods>
-      </class> <!-- demo.page.project.TC01_DemoApp_SwitchTabs_1 -->
+      </class> <!-- demo.page.project.TC01_DemoApp_SwitchTabs -->
       <class name="demo.page.project.TC03_SignOn_wrongCred">
         <methods>
           <include name="launchDemoPage"/>
           <include name="afterTest_Quit"/>
         </methods>
       </class> <!-- demo.page.project.TC03_SignOn_wrongCred -->
-    </classes>
-  </test> <!-- TC01(failed) -->
-  <test name="TC03(failed)">
-    <classes>
-      <class name="demo.page.project.TC01_DemoApp_SwitchTabs_1">
+      <class name="demo.page.project.TC02_User_Registration">
         <methods>
-          <include name="launchDemoPage"/>
-        </methods>
-      </class> <!-- demo.page.project.TC01_DemoApp_SwitchTabs_1 -->
-      <class name="demo.page.project.TC03_SignOn_wrongCred">
-        <methods>
-          <include name="wrongCred"/>
+          <include name="registerUser"/>
           <include name="launchDemoPage"/>
           <include name="afterTest_Quit"/>
         </methods>
-      </class> <!-- demo.page.project.TC03_SignOn_wrongCred -->
+      </class> <!-- demo.page.project.TC02_User_Registration -->
+      <class name="demo.page.project.TC04_SignOn_correctCred_FlightBooking">
+        <methods>
+          <include name="launchDemoPage"/>
+          <include name="afterTest_Quit"/>
+        </methods>
+      </class> <!-- demo.page.project.TC04_SignOn_correctCred_FlightBooking -->
     </classes>
-  </test> <!-- TC03(failed) -->
+  </test> <!-- TC02(failed) -->
 </suite> <!-- Failed suite [Demo App] -->

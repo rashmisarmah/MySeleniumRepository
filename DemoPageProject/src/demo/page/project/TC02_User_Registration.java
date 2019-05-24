@@ -72,8 +72,8 @@ public class TC02_User_Registration {
 		driver.findElement(By.name("confirmPassword")).sendKeys("mercury");
 		
 		//clicking on REGISTER button
-		//driver.findElement(By.name("register")).click();
-		driver.findElement(By.xpath("//input[@name='register'")).click();
+		driver.findElement(By.name("register")).click();
+		//driver.findElement(By.xpath("//input[@name='register'")).click();
 		
 	}
 	
